@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `amazonlinux` official image](https://hub.docker.com/_/amazonlinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -30,6 +32,8 @@ WARNING:
 -	[`2018.03.0.20220315.0-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/b4ded7a10bda59b6315353ca0ad7c85befa0fd3f/Dockerfile)
 -	[`2022.0.20220308.1`, `2022`, `devel`](https://github.com/amazonlinux/container-images/blob/6fa4bf1b19c77dfa6c49aed95207c334dcf72380/Dockerfile)
 -	[`2022.0.20220308.1-with-sources`, `2022-with-sources`, `devel-with-sources`](https://github.com/amazonlinux/container-images/blob/e3ef4927440fb2902c40ca7ed2c984e64422a19e/Dockerfile)
+
+[![amd64/amazonlinux build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/amd64/job/amazonlinux.svg?label=amd64/amazonlinux%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/amd64/job/amazonlinux/)
 
 # Quick reference (cont.)
 
