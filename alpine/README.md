@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v5` builds of [the `alpine` official image](https://hub.docker.com/_/alpine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20220316`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/1d264966e79d140f528deba4c8930da8d0b3478b/x86_64/Dockerfile)
--	[`3.15.1`, `3.15`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/97d31961f0a778654d8ac5ff6111c1125ffaf633/x86_64/Dockerfile)
--	[`3.14.4`, `3.14`](https://github.com/alpinelinux/docker-alpine/blob/ea777266460528766523d6007db57bd7fbdeb7dd/x86_64/Dockerfile)
--	[`3.13.8`, `3.13`](https://github.com/alpinelinux/docker-alpine/blob/7c00c38bea2a0ce95348d972577a2502dd45932d/x86_64/Dockerfile)
--	[`3.12.10`, `3.12`](https://github.com/alpinelinux/docker-alpine/blob/e62cf19c18f22e53f7c012cb442a36eac7d49085/x86_64/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
+
+[![arm32v5/alpine build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/alpine.svg?label=arm32v5/alpine%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/alpine/)
 
 # Quick reference (cont.)
 
@@ -62,7 +62,7 @@ WARNING:
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.14
+FROM arm32v5/alpine:3.14
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```
